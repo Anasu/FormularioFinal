@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="seccion-general">
+    <div class="background">
+      <h1>Formulario de registro</h1>
+
+      <form id="formulario" class="form">
+        <input type="text" id="rut" name="rut" placeholder="Rut">
+        <div id="rut_error" class="error" style="display:none;">
+          Por favor ingrese su rut sin puntos y con guión. Ejemplo: 12345678-5 .
+        </div>
+
+        <input type="text" id="fname" name="fname" placeholder="Nombres">
+        <div id="fname_error" class="error" style="display:none;">
+          Por favor ingrese su nombre.
+        </div>
+
+        <input type="text" id="lname" name="lname" placeholder="Apellidos">
+        <div id="lname_error" class="error" style="display:none;">
+          Por favor ingrese su apellido. No debe superar los 80 caracteres.
+        </div>
+        
+        <input type="number" id="age" name="age" placeholder="Edad">
+        <div id="age_error" class="error" style="display:none;">
+          Por favor ingrese su edad. 
+        </div>
+
+        <input type="text" id="email" name="email" placeholder="Correo">
+        <div id="email_error" class="error" style="display:none;">
+          Por favor ingrese su e-mail. Debe cumplir con el formato mi.email@dominio.com.
+        </div>
+
+
+        <input id="specialties" list="specialties-list" name="specialties" placeholder="Especialidad">
+        <datalist id="specialties-list">
+          <option value="Cardiología">
+          <option value="Dental">
+          <option value="Traumatología">
+          <option value="Neurología">
+          <option value="Medicina General">
+        </datalist>
+        
+        <div class="fecha">
+          <!-- <p>Fecha de reserva:</p> -->
+          <input type="text" name="dia" id="dia" class="ancho-corto" placeholder="DD">
+          <input type="text" name="mes" id="mes" class="ancho-corto" placeholder="MM">
+          <input type="text" name="ano" id="ano" class="ancho-largo" placeholder="YYYY">
+        </div>
+        <div id="fecha_error" class="error" style="display:none;">
+          Por favor ingrese una fecha válida. Recuerde que debe cumplir el formato DD MM YYYY.
+        </div>
+
+        <input id="hour" list="hora" name="hora" placeholder="Hora de reserva">
+        <datalist id="hora">
+          <option value="8:00">
+          <option value="9:00">
+          <option value="10:00">
+          <option value="11:00">
+          <option value="12:00">
+        </datalist>
+
+        <input type="submit" value="Reservar" id="enviar">
+
+      </form>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="script/validacion.js"></script>
+</body>
+</html>
