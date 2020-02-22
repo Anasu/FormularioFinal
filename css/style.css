@@ -1,0 +1,65 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.seccion-general {
+  display: flex;
+  justify-content: center;
+}
+
+.background {
+  background-color: #6E9E41;
+  padding: 2% 10%;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: #FCFDFB;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  background-color: #CFDFC0;
+  padding: 5% 10%;
+  min-width: 50vw;
+  border-radius: 10px;
+}
+
+.form input {
+  display: block;
+  color: #646464;
+  width: 100%;
+  padding: 0.5rem 5%;
+  margin-bottom: 1rem;
+}
+.fecha{
+  background-color: #CFDFC0;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.ancho-corto, .ancho-largo{
+  display: inline-block;
+}
+.ancho-corto {
+  width: 20%;
+  margin-right: 5%;
+}
+.ancho-largo{
+  width: 50%;
+}
+.error {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #CFDFC0;
+  color: #646464;
+  margin-bottom: 1rem;
+  margin-top: -1rem; /* hack feo */
+  padding: 0 3%;
+  font-size: 0.75rem;
+}
